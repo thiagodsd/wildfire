@@ -4,11 +4,11 @@
 
 modelos de predição - clássico, dl convencional, aplicações regionais
 
-- Di Giuseppe et al (2025) - "Global data-driven prediction of fire activity", modelo PoF do ECMWF/Copernicus. Nature Comms. doi:10.1038/s41467-025-58097-7
-- He et al (2024) - ConvLSTM com atenção canal-espacial + Visual Transformer, predição diária China Oriental. Ecological Indicators. sem doi
-- Mambile et al (2025) - ConvLSTM no Monte Kilimanjaro, contexto tropical. Natural Hazards Research. doi:10.1016/j.nhres.2024.12.002
-- Marjani et al (2024) - CNN-BiLSTM spread diário Austrália, F1 0.64. Remote Sensing. doi:10.3390/rs16081467
-- Illarionova et al (2025) - comparação RF/XGBoost/ConvLSTM/Autoencoder/etc, 5 dias. Scientific Reports. doi:10.1038/s41598-025-94002-4
+- Di Giuseppe et al (2025) - "Global data-driven prediction of fire activity", modelo PoF do ECMWF/Copernicus. Nature Comms. https://www.nature.com/articles/s41467-025-58097-7
+- He et al (2024) - ConvLSTM com atenção canal-espacial + Visual Transformer, predição diária China Oriental. Ecological Indicators. TODO -> https://ieeexplore.ieee.org/abstract/document/10919175
+- Mambile et al (2025) - ConvLSTM no Monte Kilimanjaro, contexto tropical. Natural Hazards Research. https://www.sciencedirect.com/science/article/pii/S2666592124000933?via%3Dihub
+- Marjani et al (2024) - CNN-BiLSTM spread diário Austrália, F1 0.64. Remote Sensing. https://www.mdpi.com/2072-4292/16/8/1467
+- Illarionova et al (2025) - comparação RF/XGBoost/ConvLSTM/Autoencoder/etc, 5 dias. Scientific Reports. https://www.nature.com/articles/s41598-024-52821-x
 - Zhu et al (2025) - SimAM Full Attention network, risco global, teleconexões. Climate Dynamics. sem doi
 - Zhou et al (2025) - Swin-UNet vs UNet complementares pra wildfire spread. JGR Machine Learning. doi:10.1029/2024JH000409
 - Lahrichi et al (2025) - Res18-Unet + focal loss, 37% melhoria em AP. aceito WACV. arxiv:2502.12003
