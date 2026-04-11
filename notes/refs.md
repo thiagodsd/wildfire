@@ -91,3 +91,100 @@ benchmarks, reviews, dados
 - [ ] Li et al (2024) - Sim2Real-Fire dataset, 1M simulados + 1K reais. NeurIPS
 - [ ] Xu et al (2025) - review abrangente DL + remote sensing pra wildfire, 138 estudos. ISPRS JPRS. doi:10.1016/j.isprsjprs.2025.06.002
 - [ ] Yarmohammadian et al (2025) - review de physics-informed surrogate modelling em fire engineering. Applied Sciences. doi:10.3390/app15158740
+
+
+## cnn+transformer
+
+segunda rodada — foco em arquiteturas híbridas CNN+Transformer e Swin pra wildfire
+
+### swin transformers
+
+- [x] Zhao & Ban (2025) - AR-SwinUNETR, autoregressive SwinUNETR pra fire spread com VIIRS time-series, Canadá. IJAEOG
+    * https://www.sciencedirect.com/science/article/pii/S1569843225000056 -> superou https://www.sciencedirect.com/science/article/abs/pii/S1051200424002872
+- [x] Li & Rad (2024) - ASUFM, Swin U-Net + focal modulation + spatial attention, Next Day Wildfire Spread benchmark. IEEE CAI 2024
+    * https://ieeexplore.ieee.org/document/10605329
+- [x] Prapas et al (2023) - TeleViT, ViT com tokenização assimétrica, previsão sub-sazonal a sazonal, dataset SeasFire global. ICCV 2023 Workshop
+    * https://arxiv.org/abs/2512.00089
+
+### híbridos cnn+transformer
+
+- [x] Chen et al (2024) - AutoST-Net, 3DCNN paralelo + Transformer encoder-decoder, fire spread SW China. Forests
+    * https://www.mdpi.com/1999-4907/15/4/705
+- [x] Yang et al (2024) - SESMTML, Squeeze-Excitation CNN + multi-scale Transformer, F1=83.10% no FireRisk (supera Swin standalone 68.53%). sem venue claro
+    * https://www.mdpi.com/1999-4907/15/9/1581
+- [x] Dubey et al (2025) - Transformer+FRBS, F1=92.9%, substituir por LSTM causa queda grande. MethodsX
+    * https://www.sciencedirect.com/science/article/pii/S2215016125003437
+
+### comparações e benchmarks
+
+- [ ] Anastasiou et al (2025) - ViT vs U-Net2D vs U-Net3D, Mediterrâneo ~9500 eventos, ViT pior com dados limitados. sem venue claro
+- [ ] Xu et al (2025) - BCWildfire benchmark, 2.4M amostras, 38 covariáveis, British Columbia. submetido AAAI
+
+### contexto brasil/tropical
+
+- [x] Freitas et al (2025) - RF e XGBoost pra Amazônia. J South American Earth Sciences
+    * https://www.sciencedirect.com/science/article/abs/pii/S0895981125000288
+- [x] Rubí & Gondim (2023) - ANN e AdaBoost pra Cerrado
+    * https://www.mdpi.com/2571-6255/7/12/482
+- [x] Borges et al (2025) - SEMFOGO-DF, CNN pra detecção de fumaça no Cerrado
+    * https://www.researchsquare.com/article/rs-4865999/v1
+
+
+## 2026
+
+terceira rodada — atualização 2026, foco em papers janeiro–abril
+
+### cnn+transformer
+
+- [x] Yang et al (2026) - MaskViT, ViT cross-attention pra reconstrução de fogo sob nebulosidade + L-TAE pra predição next-day, WildfireSpreadTS. arxiv:2603.09042
+    * https://arxiv.org/html/2603.09042
+- [x] Tahermanesh et al (2026) - CA-MTransUNet, TransUNet + linear attention (CLAM) + MoE, burned area mapping Sentinel-1/2, mIoU 87%. Big Earth Data. doi:10.1080/20964471.2025.2598994
+    * https://www.tandfonline.com/doi/full/10.1080/20964471.2025.2598994
+- [x] Dubey & Dubey (2026) - "From Convolution to Attention", transformer com positional encoding pra spread multi-day + BDI reasoning. IEEE
+    * https://ieeexplore.ieee.org/document/11072678
+    * https://www.sciencedirect.com/science/article/pii/S2215016125003437
+- [x] Lilhore et al (2026) - ViT + 3D-CNN híbrido pra detecção fogo/fumaça em vídeo, 99.2% accuracy. Sci Reports. doi:10.1038/s41598-026-36687-9
+    * https://pmc.ncbi.nlm.nih.gov/articles/PMC12988158/
+- [x] MST++ (2026) - Multi-Scale Transformer++ pra reconstrução hiperespectral em segmentação de fogo. Fire. doi:10.3390/fire9040139
+    * https://www.mdpi.com/2571-6255/9/4/139
+
+### gnn+attention
+
+- [ ] Xu et al (2026) - HiGO, graph ODE hierárquico com cross-attention, classificação ordinal global, KDD 2026. arxiv:2601.01501. doi:10.1145/3770854.3780193
+- [ ] GCN-LSTM (2026) - grafo por correlação climática, previsão 12 meses global com JULES-INFERNO. Geosci Remote Sens AI. doi:10.1016/j.geoai.2026.100052
+
+### foundation models
+
+- [ ] Prithvi-EO-2.0 (2026) - NASA/IBM, ViT 300M/600M params, masked autoencoding em 4.2M amostras HLS 30m, wildfire scar mapping como downstream. arxiv:2412.02732v3
+- [ ] FireMM-IR (2026) - LLM multimodal tri-task (captioning + segmentação + reasoning de spread) com fusão RGB+IR. MDPI
+- [ ] Caron et al (2026) - GRU multi-target + framework multi-agente LLM pra síntese de risco, dados franceses. arxiv:2601.11686
+
+### incerteza e operacional
+
+- [ ] Dayan (2026) - conformal risk control (CRC) pra wildfire, garantia FNR ≤ 0.05, compara LightGBM/U-Net/ResGNN-UNet no NDWS. arxiv:2603.22331
+- [ ] Mathur et al (2026) - FireCastRL, predição espaço-temporal + RL pra supressão com helitack, dataset 9.5M amostras. arxiv:2601.14238
+- [ ] arXiv:2601.01677 (2026) - predição multi-escala temporal com UQ explícita, Western Canada
+- [ ] Kim et al (2026) - agente AI real-time pra spread 2D espaço-temporal. Fire. doi:10.3390/fire9030137
+- [ ] PINNEVs (2026) - NNs parcialmente interpretáveis + extreme value process pra wildfires extremos EUA. J Comp Graph Stats. doi:10.1080/10618600.2025.2609641
+
+### outros
+
+- [x] Abozeid & Alanazi (2026) - ViT + YOLOv8 pra detecção fumaça/fogo em smart cities. Sci Reports. doi:10.1038/s41598-026-42762-y
+    * https://www.nature.com/articles/s41598-026-42762-y
+- [ ] FIRE-VLM (2026) - CLIP + PPO RL pra tracking de wildfire com multi-UAV. arxiv:2601.03449
+- [x] Ma et al (2026) - TabNet (attention-based) pra suscetibilidade SW China, AUC 0.760. Fire. doi:10.3390/fire9030107
+    * https://www.mdpi.com/2571-6255/9/3/107
+
+### brasil e dados
+
+- [ ] DescrEVE Fogo (2026) - framework relacional PostGIS do INPE, agrupa detecções multi-sensor (AVHRR/MODIS/VIIRS) 2003–presente em eventos de fogo. Remote Sensing. doi:10.3390/rs18040606
+- [x] Massi et al (2026) - tendências de queimadas Brasil 1985–2024 com Mapbiomas Fire 30m, 10.2% do território com tendência crescente. Biological Conservation. doi:10.1016/j.biocon.2025.111691
+    * https://www.sciencedirect.com/science/article/pii/S0006320725007281
+
+### reviews 2026
+
+- [ ] Karger et al (2026) - bibliometria 1985 papers, identifica transformers e GNNs como mais promissores. Discover AI. doi:10.1007/s44163-026-01087-5
+- [x] ISPRS JPRS (2026) - review DL + remote sensing pra wildfire, nota que América do Sul é sub-representada. doi:S0924271625002217
+    * https://arxiv.org/abs/2405.01607
+- [ ] J Sustainable Forestry (2026) - PRISMA scoping review 36 estudos, CNN-LSTM e U-Net mais efetivos. doi:10.1080/10549811.2025.2589352
+- [ ] Ecological Informatics (2026) - survey pipeline ML completo pra wildfire risk. doi:S1574954125003346
