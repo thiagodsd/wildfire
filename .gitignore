@@ -190,6 +190,16 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.out
+*.toc
+*.nav
+*.snm
+*.pdf
+
 snippets/**/*
 files/*.pdf
 data/*
