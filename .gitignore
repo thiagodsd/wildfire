@@ -204,10 +204,4 @@ snippets/**/*
 files/*.pdf
 data/*
 !data/.gitkeep
-dissertation/main.lof
-dissertation/main.lot
-dissertation/references.bib
-dissertation/main.tex
-dissertation/pacoteBasico.sty
-dissertation/references.bib
-dissertation/slides/main.tex
+dissertation/**/*
