@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Deep learning for wildfire prediction"
 requires-python = ">=3.13"
 dependencies = [
+    "openai>=2.36.0",
     "pymupdf>=1.25.0",
     "python-dotenv>=1.2.2",
     "pyzotero>=1.6.0",
